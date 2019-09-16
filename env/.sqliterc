@@ -1,0 +1,17 @@
+/*
+	Multi line comments: slash-asterisk COMMENT asterisk-slash
+	Single line comments: minus minus COMMENT
+	Also see: http://tech.marksblogg.com/sqlite3-tutorial-and-guide.html
+*/
+
+/* show the column names in output */
+.headers on
+
+/* nice formatted output */
+.mode column
+
+/* Set the promtp to something different */
+-- .prompt "> "
+
+/* show runtime durations after every statement */
+-- .timer on

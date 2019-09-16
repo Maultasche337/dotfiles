@@ -1,0 +1,15 @@
+[user]
+  name = Chris Metz
+  email = chris@teamheartcode.com
+#[push]
+#  default = simple
+[color]
+  ui = true
+[core]
+  editor = vi
+[merge]
+  tool = vimdiff
+[core]
+  excludesfile = ~/.gitignore_global
+#[fetch]
+#  prune = true
