@@ -9,6 +9,12 @@ function install_env() {
   echo "Done."
 }
 
+function install_omz() {
+  echo "Installing oh-my-zsh files"
+  cp -v oh-my-zsh/* ~/.oh-my-zsh/custom/
+  echo "Done."
+}
+
 function install_vim() {
   echo "Installing vim files"
   rm -rf ~/.vim/ ~/.vimrc
@@ -22,12 +28,16 @@ case $1 in
   env)
     install_env
     ;;
+  omz)
+    install_omz
+    ;;
   vim)
     install_vim
     ;;
   *)
     echo "Available commands:"
     echo "env"
+    echo "omz - Install oh-my-zsh files"
     echo "vim"
     ;;
 esac
