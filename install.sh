@@ -5,7 +5,11 @@ cd $DIR
 
 function install_env() {
   echo "Installing environment files"
-  cp -v env/.* ~/
+  cp -v env/.gitconfig ~/
+  cp -v env/.gitignore_global ~/
+  cp -v env/.npmrc ~/
+  cp -v env/.sqliterc ~/
+  cp -v env/.tmux.conf ~/
   echo "Done."
 }
 
