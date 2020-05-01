@@ -9,7 +9,7 @@
   editor = vi
 [merge]
   tool = vimdiff
-[core]
-  excludesfile = ~/.gitignore_global
+#[core]
+#  excludesfile = ~/.gitignore_global
 #[fetch]
 #  prune = true
