@@ -34,6 +34,7 @@ NeoBundle 'matt-deacalion/vim-systemd-syntax'
 NeoBundle 'nginx.vim'
 NeoBundle 'tomlion/vim-solidity'
 NeoBundle 'cespare/vim-toml'
+NeoBundle 'elixir-editors/vim-elixir'
 
 call neobundle#end()
 
