@@ -6,10 +6,12 @@
 [color]
   ui = true
 [core]
-  editor = vi
+  editor = vim
 [merge]
   tool = vimdiff
 #[core]
 #  excludesfile = ~/.gitignore_global
 #[fetch]
 #  prune = true
+[pull]
+  rebase = false
