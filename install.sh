@@ -5,6 +5,7 @@ cd $DIR
 
 function install_env() {
   echo "Installing environment files"
+  cp -v env/.alacritty.yml ~/
   cp -v env/.gitconfig ~/
   cp -v env/.gitignore_global ~/
   cp -v env/.npmrc ~/
