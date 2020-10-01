@@ -90,9 +90,10 @@
   #multiplier: 3
 
 # Font configuration
-#font:
-#  normal:
-#    family: 'Fira Code'
+font:
+  size: 14
+  normal:
+    family: 'Ubuntu Mono'
 #font:
   # Normal (roman) font face
   #normal:
