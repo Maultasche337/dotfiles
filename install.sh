@@ -26,7 +26,30 @@ function install_exa() {
 
 function install_omz() {
   echo "Installing oh-my-zsh files"
-  cp -v oh-my-zsh/* ~/.oh-my-zsh/custom/
+
+  echo "common"
+  cp -v oh-my-zsh/common/* ~/.oh-my-zsh/custom/
+
+  if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    echo "linux-gnu"
+  elif [[ "$OSTYPE" == "darwin"* ]]; then
+    # Mac OSX
+    echo "macos"
+  elif [[ "$OSTYPE" == "cygwin" ]]; then
+    # POSIX compatibility layer and Linux environment emulation for Windows
+    echo "cygwin"
+  elif [[ "$OSTYPE" == "msys" ]]; then
+    # Lightweight shell and GNU utilities compiled for Windows (part of MinGW)
+    echo "msys"
+  elif [[ "$OSTYPE" == "win32" ]]; then
+    # I'm not sure this can happen.
+    echo "win32"
+  elif [[ "$OSTYPE" == "freebsd"* ]]; then
+    echo "freebsd"
+  else
+    echo "unknown"
+  fi
+
   echo "Done."
 }
 
