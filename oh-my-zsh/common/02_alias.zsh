@@ -1,2 +1,5 @@
 alias dps="docker ps -a"
+alias df="df -h"
+alias el="exa -lg --git --group-directories-first"
+alias ela="exa -lga --git --group-directories-first"
 alias gssm="git stash save -p"

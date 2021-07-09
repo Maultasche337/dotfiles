@@ -1,0 +1,1 @@
+alias du1="du -h -d 1 2>/dev/null"

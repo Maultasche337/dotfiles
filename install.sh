@@ -35,6 +35,7 @@ function install_omz() {
   elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
     echo "macos"
+    cp -v oh-my-zsh/macos/* ~/.oh-my-zsh/custom/
   elif [[ "$OSTYPE" == "cygwin" ]]; then
     # POSIX compatibility layer and Linux environment emulation for Windows
     echo "cygwin"
