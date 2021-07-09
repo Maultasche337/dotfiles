@@ -31,7 +31,9 @@ function install_omz() {
   cp -v oh-my-zsh/common/* ~/.oh-my-zsh/custom/
 
   if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    # TODO distro specific
     echo "linux-gnu"
+    cp -v oh-my-zsh/linux/* ~/.oh-my-zsh/custom/
   elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
     echo "macos"
